@@ -38,8 +38,8 @@ var head;
 
 
 var mtlLoader = new THREE.MTLLoader();
-mtlLoader.setTexturePath('/examples/3d-obj-loader/assets/');
-mtlLoader.setPath('/examples/3d-obj-loader/assets/');
+mtlLoader.setTexturePath('/rhs31.github.io/assets/');
+mtlLoader.setPath('/rhs31.github.io/assets/');
 mtlLoader.load('BestHead.mtl', function (materials) {
   
     materials.preload(); 
@@ -48,7 +48,7 @@ mtlLoader.load('BestHead.mtl', function (materials) {
     var objLoader = new THREE.OBJLoader();
     materials.flatShading = true;
     objLoader.setMaterials(materials);
-    objLoader.setPath('/examples/3d-obj-loader/assets/');
+    objLoader.setPath('/rhs31.github.io/assets/');
     objLoader.load('BestHead.obj', function (object) {
         console.log(object);
         head = object.children[0];//this SHOULD be a mesh
