@@ -1,0 +1,206 @@
+body 
+			{ 
+				margin: 0;
+				background-color: silver;
+				font-family: 'Roboto', sans-serif;
+				font-style: thin;
+				font-size: 10em;
+
+				
+			}
+			canvas 
+			{ 
+				width: 100%; height: 100%
+			}
+			a
+			{
+				font-size: 35%;
+			}
+			
+			a:link
+			{
+			   color: black;
+			   text-decoration: none;
+			}
+			a:visited
+			{
+			   color: black;
+			   text-decoration: none;
+			}
+			a:hover
+			{
+			   color: black;
+			  text-decoration: underline; 
+			}
+			a:active
+			{
+			   color: black;
+			  text-decoration: underline; 
+			}
+			#top-intro
+			{
+				position: absolute;
+				top: 2vw;
+				width: 100%;
+				text-align: center;
+				/*z-index: 100;*/
+				display:block;
+			}
+			
+			.section
+			{
+				position: absolute;
+				/*width: 100%;*/
+				z-index: 100;
+				display:block;
+			}
+			#about
+			{
+				
+				top: 20%;
+				left: 10vw;
+				text-align: left;
+			}
+			#projects
+			{
+				top: 20%;
+				right: 10vw;
+				text-align: right;
+			}
+			#resume
+			{
+				bottom: 20%;
+				left: 10vw;
+				text-align: left;
+			}
+			#links
+			{
+				bottom: 20%;
+				right: 10vw;
+				text-align: right;
+			}
+			#headControls
+			{
+				top: 25%;
+				text-align: center;
+				font-size: 15%;
+				left: 25%;
+				right: 25%;
+				
+			}
+			button
+			{
+				border: none;
+				outline: none;
+				background: none;
+
+			}
+			button:hover 
+			{
+	  			text-decoration: underline;
+			}
+			button:active
+			{
+				text-decoration: underline;
+			}
+
+			.modal-header 
+			{
+			    text-align: center;
+			    border-bottom: none;
+			}
+			.modal-body
+			{
+				border-bottom: none;
+			}
+			.modal-footer
+			{
+				border-top: none;
+			}
+			 .modal-body, .modal-footer, .modal-header, .modal a
+			 {
+			 	font-size: 20px;
+			 	background-color: silver;
+			 }
+			 .modal img
+			 {
+			 	width: 50%;
+			 }
+			 .modal a
+			 {
+			 	color: black;
+			 	text-decoration: underline;
+			 	background-color: transparent;
+			 }
+			 .fa 
+			 {
+			  padding: 20px;
+			  font-size: 30px;
+			  width: 50px;
+			  text-align: center;
+			  margin: 5px 2px;
+			}
+			#linksModal a
+			{
+				text-decoration: none;
+			}
+			.fa:hover 
+			{
+			    opacity: 0.7;
+			    text-decoration: none;
+			}
+			.selected
+			{
+				text-decoration: underline;
+			}
+			
+			.nav-tabs {
+ 			 border-bottom: 1;
+ 			 border-color: black;
+			}
+			.nav-tabs a
+			{
+				text-decoration: none;
+				background-color: transparent;
+			}
+			.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover /*this is the active tab*/
+			{
+				background-color: transparent;
+				border-color: black;
+				border-bottom-color: silver;
+			}	
+
+			.panel-body 
+			{
+				background-color:#F8F8F8;
+			}
+	    	.panel-title a
+	    	{
+	    		text-decoration: none;
+	    	}
+			footer 
+			{
+			  position: absolute;
+			  bottom: 2%;
+			  width: 100%;
+			  text-align: center;
+			  font-size: 13px;
+			}
+@media only screen and (max-height: 850px)/*hides "developer" if window is too short*/
+			{
+	   			 a
+	   			 {
+	   			 	font-size: 20%;
+	   			 }
+	   			 
+	   			 #developer
+	   			 {
+	       			 font-size: 20%;
+	       			 margin-top: 1px;
+	    		 }
+	    		 #headControls
+	    		 {
+	    		 	top: 70%;
+	    		 }
+	    		
+		  }

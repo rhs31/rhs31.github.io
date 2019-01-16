@@ -1,0 +1,495 @@
+<html>
+	<head>
+		
+		 <meta name="viewport" id="viewport-meta" content="width=device-width, user-scalable=no" /> <!--Added for mobile responsiveness -->
+		<title>Robert Silverberg</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="portfolio.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		
+
+
+	</head>
+	<body>
+		<div id="top-intro">
+			<h1>Robert Silverberg</h1>	
+			<h3 id="developer">Developer</h3>
+		</div>
+		<a data-toggle="modal" href="#aboutModal" id="about" class="section">About Me</a>
+		<a data-toggle="modal" href="#projectModal"class="section" id="projects">Projects</a>
+		<a data-toggle="modal" href="#resumeModal"class="section" id="resume">Résumé</a>
+		<a data-toggle="modal" href="#linksModal" class="section" id="links">Links</a>
+		
+		<div id="headControls" class="section">
+			<button class ="mode selected" id="followCursor">Follow Cursor</button> / <button class="mode" id="clickDrag">Click & Drag</button>
+		</div>
+		
+
+
+		<!-- About Modal -->
+		<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="aboutModalLabel">About Me</h4>
+		      </div>
+		      <div class="modal-body">
+		        <center><img src="assets/RobHead.jpg"></center>
+		        <br>
+		        Hi, I'm Robbie. I'm a computer science student at the <nobr>University of Miami</nobr> in Coral Gables, Florida. I will tentatively be graduating in December of 2019, and am <b>currently looking for an internship for this summer.</b>
+		        <br>
+		        <br>
+		        I grew up both in Princeton, New Jersey, and on the island of <nobr>St. Croix</nobr> in the US Virgin Islands.
+		        <br>
+		        <br>
+		        Lately, my primary focus has been in C# and Unity development, but I have experience with many technologies, and am open to learning more. Check out the projects section to see some of that experience. 
+		        <br>
+		        <br>
+		        I have previously worked as the Lead Instructor at 
+		        <a href="https://www.idtech.com/" style="text-decoration: underline;">iD Tech Camp's</a> 
+		        Rider University location, teaching Java, JavaScript, Unreal Engine, and Maya.         
+		        
+		      </div>
+		      <div class="modal-footer">
+		        <a data-dismiss="modal" style="text-decoration: none; cursor:pointer;">Close</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Projects Modal -->
+		<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="projectModalLabel">Projects</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div>
+
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a class="tabName" href="#csharp" aria-controls="csharp" role="tab" data-toggle="tab">C#/Unity</a></li>
+				    <li role="presentation"><a class="tabName" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Web Dev</a></li>
+				    <li role="presentation"><a class ="tabName" href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Misc.</a></li>
+				  </ul>
+
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="csharp">
+
+					<br>	
+
+				    <!-- Accordion for "Unity/C#" tab -->
+						<div class="panel-group" id="accordion">
+						  <div class="panel panel-default">
+						    <div  data-toggle="collapse" data-parent="#accordion" href="#collapseTransplant" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          Transplant
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseTransplant" class="panel-collapse collapse">
+						      <div class="panel-body">
+						         <h2>Transplant</h2>
+						        <iframe src="https://drive.google.com/file/d/1H30f8rZ7VuYsLlduxwqkiT7_CuzgJb3H/preview" allowfullscreen="" frameborder="0" height="315" width="100%"></iframe>
+						    	<br>
+						    	<i>About the video: The white spheres that appear are points where the Magic Leap is hand tracking, as the trees "activate" upon being touched. The initial setup where I use a controller to put down the trees would not have been seen by visitors of the exhibit, so they did not need to hold the controller. When they reached the end of the exhibit, they would give two thumbs-up, which the Magic Leap One would recognize, and it would reset the exhibit for the next person. I demonstrate this at the end.</i>
+						    	<br>
+						    	<br>
+						    	<b>Completed:</b> December 2018
+						    	<br>
+						    	<b>Project Duration:</b> ~One Month
+						    	<br>
+						    	<b>Role(s):</b> Developer, Programmer, Co-Designer
+						    	<br>
+						    	<b>Team Size:</b> Two
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> Magic Leap One, Unity, C#
+						    	<br>
+						    	<b>Code/Files:</b> Available on request
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	<i>‘Transplant’ explores the concept of putting down roots in foreign environments, via #AugmentedReality and #volumetric #photogrammetry. It is our first project on the #MagicLeapOne, and premiered at Flimgate Interactive Media Festival and the Arcadia Earth exhibition, during Miami’s Art Week, December 2018. 
+						    	<br>
+								<br>
+								Banyan trees, one of the natural icons of Miami, are actually native to India, brought here in the early 1900's. Likewise, more than 50% of the residents of Miami are foreign-born "transplants." And all of us have also been putting down roots in the digital realm. Transplant explores these concepts via audio interviews, volumetric photogrammetry and augmented reality. </i>
+						    	<br>
+						    	<br>
+						    	<i>Transplant</i> is an interactive art installation that was shown at the <a href="https://www.filmgate.miami/filmgate-interactive-media-festival-06-interactive-installations">Filmgate Interactive Media Festival</a> as well as the <a href="https://www.arcadia.earth/">Arcadia Earth Show</a>, both of which took place in Miami, Florida. 
+						    	<br>
+						    	<br>
+
+		 
+						    	I had met Felipe Aguilar of <a href="http://www.bogotadc.tv/#/transplant/">Bogota Digital Cinema</a> at a <nobr>Magic Leap</nobr> interest meetup. He called me later and pitched his concept to me, and shortly afterwards, we started working on the project. Felipe provided me with Magic Leap hardware, creative direction, photogrammetrically captured 3D models, and audio, while I concurrently developed and programmed the experience with Unity and C#, while also providing my own creative input.
+						    	<br>
+						    	<br>
+						    	This project introduced me to development on the Magic Leap, and Felipe also introduced me to the concept of photogrammetry, which I was later able to do on my own to create the centerpiece for this site.
+						    	<br>
+						    	<br>
+						    	<i>Transplant</i> was tried by a couple of Magic Leap employees, who enjoyed it and gave positive feedback, even promoting it on their own social media. The CEO even retweeted one of their promotions.
+						    	<br>
+						    	<br>
+						    	You can view the trailer here:
+						    	<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">‘Transplant’ explores the concept of putting down roots in foreign environments, via <a href="https://twitter.com/hashtag/AugmentedReality?src=hash&amp;ref_src=twsrc%5Etfw">#AugmentedReality</a> and <a href="https://twitter.com/hashtag/volumetric?src=hash&amp;ref_src=twsrc%5Etfw">#volumetric</a> <a href="https://twitter.com/hashtag/photogrammetry?src=hash&amp;ref_src=twsrc%5Etfw">#photogrammetry</a> It is our first project on the <a href="https://twitter.com/hashtag/MagicLeapOne?src=hash&amp;ref_src=twsrc%5Etfw">#MagicLeapOne</a> and can be viewed during <a href="https://twitter.com/hashtag/MiamiArtWeek?src=hash&amp;ref_src=twsrc%5Etfw">#MiamiArtWeek</a> DM me if interested. <a href="https://twitter.com/rahb_19?ref_src=twsrc%5Etfw">@rahb_19</a> <a href="https://twitter.com/sannabh?ref_src=twsrc%5Etfw">@sannabh</a> <a href="https://twitter.com/magicleap?ref_src=twsrc%5Etfw">@magicleap</a> <a href="https://twitter.com/hashtag/yesss?src=hash&amp;ref_src=twsrc%5Etfw">#yesss</a>! <a href="https://t.co/zX68K105d3">pic.twitter.com/zX68K105d3</a></p>&mdash; FelipeAguilarArt (@BogotaDC) <a href="https://twitter.com/BogotaDC/status/1070754787036184577?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
+								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+								I'm credited towards the end of the video, as well as in a <a href="https://twitter.com/BogotaDC/status/1073030646824665088">follow-up tweet.</a>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseSugarCrash" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          Sugar Crash
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseSugarCrash" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        <h2>Sugar Crash</h2>
+						        <iframe src="https://drive.google.com/file/d/1gRDYsSd21okj3u7aG4oelSv4I0dvTbkT/preview" allowfullscreen="" frameborder="0" width="100%" height="315"></iframe>
+						        <b>Completed:</b> September 2018
+						    	<br>
+						    	<b>Project Duration:</b> Less than a day
+						    	<br>
+						    	<b>Role(s):</b> Lead Developer/Programmer, Co-Designer
+						    	<br>
+						    	<b>Team Size:</b> Six
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> Unity, C#
+						    	<br>
+						    	<b>Code/Files:</b> <a href="https://github.com/rhs31/Sugar-Crash"><i class="fab fa-github fa-fw"></i></a> <a href="https://drive.google.com/drive/folders/1XuB8IvT1ANH-zo6kZSxrKTDSCyZE0wKm?usp=sharing"><i class="fab fa-google-drive fa-fw"></i></a> 
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	This project was the <b>second place winner</b> at the 2018 <a href="https://www.magicgamejam.com/">Magic Game Jam</a> at Miami-Dade College. As per the rules of the game jam, we had around 20 hours to come up with a concept and build it.
+						    	<br>
+						    	<br>
+						    	I arrived at the game jam alone, and met a nice group of students who were relative newbies, looking to learn about game development. We formed a team consisting of me, two art majors (Amanda Linares and Ashley Rosero-Barros), and three game design majors (Daniel Gomez, Gabriel Marcoccia, and Maximiliano Moscato), all freshmen except for myself.
+						    	At the game jam, all participants were told to write an adjective and a noun, each on separate sticky notes, and hand them to the organizers. A random adjective and a random noun were chosen and combined to form the theme to be used for all games in the jam. The resulting theme was "sticky railway." We then had about twenty hours to create an original game with this theme.
+						    	<br>
+								<br>
+								We bounced around ideas for game mechanics and art themes. One member proposed a game that would look something like <a href="https://en.wikipedia.org/wiki/Subway_Surfers">Subway Surfers</a>. I felt that an infinite-runner type game was easy enough to implement in a short period of time. I then came up with the idea of controlling a train in a candy world, which would fit the theme, as well as present an opportunity for our artists to create interesting assets.
+								<br>
+								<br>
+								The artists on my team were not sure what program to use for the game, so I suggested that they try <a href="https://ephtracy.github.io/">MagicaVoxel</a>, as I felt that, from my experience with the program, this was a good way to quickly create 3D game assets, while also allowing a high level of detail if desired. I'm glad I suggested this, as they were able to create some truly beautiful assets for the game despite using the program for the first time. Practically all assets used were original. Gabriel and Maximiliano were tasked with creating a main menu for the game, which they successfully did despite having little experience with Unity. Meanwhile, I worked on building the core gameplay mechanics and level design, using C# scripting and the Unity editor.
+								<br>
+								<br>
+								Despite many road blocks and design changes during the creation of the game, it was functional by the end of the game jam. Not perfect, but functional.
+								
+						    	<br>
+						    	<br>
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="panel panel-default">
+						    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseCompleteUnity" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          The Complete C# Unity Developer 3D
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseCompleteUnity" class="panel-collapse collapse">
+						      <div class="panel-body">
+						      	<h2>Project Boost/Argon Assault/Realm Rush</h2>
+						        <b>Completed:</b> August 2018
+						    	<br>
+						    	<b>Project Duration:</b> ~Six Weeks
+						    	<br>
+						    	<b>Role(s):</b> Developer, Programmer
+						    	<br>
+						    	<b>Team Size:</b> One
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> Unity, C#, MagicaVoxel
+						    	<br>
+						    	<b>Code/Files:</b><br> Project Boost: <a href="https://github.com/rhs31/Project-Boost"><i class="fab fa-github fa-fw"></i></a> Argon Assault: <a href="https://github.com/rhs31/Argon-Assault"><i class="fab fa-github fa-fw"></i></a> Realm Rush: <a href="https://github.com/rhs31/Realm-Rush"><i class="fab fa-github fa-fw"></i></a>
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	I've grouped all of these projects together because I built them by coding along with the videos in the <a href="https://www.udemy.com/unitycourse2/">Complete C# Unity Developer 3D course on Udemy.</a> <b>I do not claim ownership of the code I wrote for Project Boost, Argon Assault, or Realm Rush.</b> However, I have included them in my portfolio because I gained valuable Unity/C# experience and knowledge by coding along with the tutorials, making sure to understand everything I was writing, and debugging things that didn't work. The linked videos are footage of my own versions of the course projects. I was able to apply this experience to projects in which I <i>did</i> write original code, such as <i>Transplant</i> and <i>Sugar Crash</i>.
+						    	<br>
+						    	<br>
+						    	<iframe src="https://drive.google.com/file/d/11Z-OSMV5bIGHyWueYQtzK4-Ho_I_RofC/preview" allowfullscreen="" frameborder="0" width="100%" height="315"></iframe>
+						    	<b>Project Boost</b> is a simple physics-based game in which the player tries to move a rocket to an objective while avoiding obstacles. This project taught me about version control, Unity physics, particle systems, and loading new levels, among other things.
+						    	<br>
+						    	<br>
+						    	<iframe src="https://drive.google.com/file/d/1sncArzfRXG8eXbQ7ceN6G4o4ATZThfO6/preview" allowfullscreen="" frameborder="0" width="100%" height="315"></iframe>
+						    	<b>Argon Assault</b> is an on-the-rails starship shoot 'em up where enemies travel on their own paths, shooting the player. This project taught me about molding terrain, using the Unity timeline system, object hierarchies, and much more.
+						    	<br>
+						    	<br>
+						    	<iframe src="https://drive.google.com/file/d/1h_DZ0Z48UGD5CNWI5J84NlwyqDzANzkF/preview" allowfullscreen="" frameborder="0" width="100%" height="315"></iframe>
+						    	<b>Realm Rush</b> is a simple tower defense game, where the player must protect a base from attack by robots. The robots will spawn and use a breadth-search-first algorithm to find a path to the base. Object pooling was also taught in this module. Built into this project was a mini-course on using MagicaVoxel, a voxel editor which provides a quick and easy way to make 3D assets.
+						    	<br>
+						    	<br>
+						    	This was a great course, and I look forward to doing more Udemy courses in the future.
+								
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="panel panel-default">
+						    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTetroStairs" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          Tetrostairs
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseTetroStairs" class="panel-collapse collapse">
+						      <div class="panel-body">
+						      	<h2>Tetrostairs</h2>
+						      	<iframe src="https://drive.google.com/file/d/1xIiJbBdlIp2sXG2jkOzrCQXhtiz3e84u/preview" allowfullscreen="" frameborder="0" width="100%" height="315"></iframe>
+						        <b>Completed:</b> May 2017
+						    	<br>
+						    	<b>Project Duration:</b> Built over the course of a semester
+						    	<br>
+						    	<b>Role(s):</b> Developer, Programmer, Designer
+						    	<br>
+						    	<b>Team Size:</b> One
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> Unity, C#, Piskel
+						    	<br>
+						    	<b>Code/Files:</b><br> <a href="https://github.com/rhs31/Tetris-Platformer"><i class="fab fa-github fa-fw"></i></a>
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	This was my first Unity project, built for my game programming class in Spring of 2017. The assignment was to create a 2D game with design/gameplay of your choosing.
+						    	<br>
+						    	<br>
+						    	The idea combines the objectives of Tetris and a platformer. The player must move falling Tetris blocks to create a path to a door at a randomized point on the other side of the screen, while avoiding running into randomly located buzzsaws, or falling off of the screen. The player intentionally has a very short jump height, so it is possible to get stuck if the wrong staircase is built, in which case the level must be restarted. The goal of the game is to try to get as many wins in a row as you can without dying.
+						    	<br>
+						    	<br>
+						    	I did all of the art and animation in a sprite-editing program called <a href="https://www.piskelapp.com/">Piskel.</a>
+						    	<br>
+						    	<br>
+						    	I believe the core concept of this game is quite good, and I would someday like to rebuild it as a polished mobile game.
+								
+						      </div>
+						    </div>
+						  </div>
+
+						  
+						</div>
+  
+						
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="messages">
+				    	
+				    	<br>
+				    	<div class="panel-group" id="accordion">
+
+				    	<div class="panel panel-default">
+						    <div data-toggle="collapse" data-parent="#accordion" href="#collapsePortfolio" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          Portfolio Site
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapsePortfolio" class="panel-collapse collapse">
+						      <div class="panel-body">
+						       <h2>Portfolio Site</h2>
+						       <center><img src="assets/portfoliopic.jpg"></center>
+						        <br>
+						        <b>Completed:</b> January 2019
+						    	<br>
+						    	<b>Project Duration:</b> ~Two Weeks
+						    	<br>
+						    	<b>Role(s):</b> Developer, Programmer, Designer
+						    	<br>
+						    	<b>Team Size:</b> One
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> HTML/CSS, Bootstrap, JavaScript, three.js, 3DF Zephyr, Blender
+						    	<br>
+						    	<b>Code/Files:</b> <a href="https://github.com/rhs31/rhs31.github.io"><i class="fab fa-github fa-fw"></i></a>
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	This website was made without the use of a premade site-builder. I had previously learned about web development from <a href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Bootcamp</a>, and I wanted to put those skills to the test. 
+						    	<br>
+						    	<br>
+						    	I came up with the design for the site on my own. For a long time, I had an idea to put my head as a 3D model in the center of my portfolio site (I found it a bit strange that I had never seen it done), but I did not know how to do this until I was introduced to the concept of photogrammetry while working on <i>Transplant</i>. After lots of experimentation, I ended up using a different program than the one used in <i>Transplant</i>, the new one called Zephyr3D. I had my dad take over one-hundred pictures of my head in a circular pattern, and then I plugged the photos into the program, which produced a 3D .obj model which I could then edit in both Zephyr3D and in Blender. You can see the process <a href="https://imgur.com/a/5rOsAfK#5P9t01q">here</a>.
+						    	
+						    	<br>
+						    	<br>
+						    	I had a bit of previous experience with three.js, a JavaScript graphics library. After a few generic tutorials on three.js, and a lot of fiddling and searching on StackOverflow, I was able to have my imported head following my cursor in the browser. I then built my portfolio site around it using HTML and CSS along with the Bootstrap framework.
+						         <br>
+						         <br>
+						         <i> Note: Please remember that the design of this site is protected under copyright law.</i>
+							      
+
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="panel panel-default">
+						    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseWebDevBootcamp" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          The Web Developer Bootcamp
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseWebDevBootcamp" class="panel-collapse collapse">
+						      <div class="panel-body">
+						      	<h2>The Web Developer Bootcamp</h2>
+						        <b>Completed:</b> July 2018
+						    	<br>
+						    	<b>Project Duration:</b> ~Six Weeks
+						    	<br>
+						    	<b>Role(s):</b> Developer, Programmer
+						    	<br>
+						    	<b>Team Size:</b> One
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> HTML/CSS, Bootstrap, JavaScript, Express.js, Node.js, MongoDB
+						    	<br>
+						    	<b>Code/Files:</b><a href="https://github.com/rhs31/WebDev-Bootcamp"><i class="fab fa-github fa-fw"></i></a><br> <i>Note: Unfortunately, it seems that the files for the backend-focused projects have gone missing. I will update this section if I find them.</i>
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	I did several mini-projects for <a href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Bootcamp</a> course on Udemy. <b>I do not claim ownership of the code used for these projects.</b> However, I have included this in my portfolio, as I learned many valuable web development skills while coding along with the videos.
+						    	<br>
+						    	<br>
+						    	This course was divided into two parts, front-end and back-end development. For the front-end portion, I used HTML, CSS, Bootstrap, and JavaScript to make a color-picking game, a Patatap clone, a dummy startup site, and many more. For the backend portion, I made a site called YelpCamp, which made use of express.js, node.js, and MongoDB, in addition to what was taught in the front-end portion. This site was able to store information about various campgrounds that users could enter.
+						    	<br>
+						    	<br>
+						    	This was a great course, and I was able to go on and use the skills learned in it to build this site!
+								
+						      </div>
+						    </div>
+						  </div>
+				</div>
+			</div>
+			 <div role="tabpanel" class="tab-pane" id="settings">
+				    	
+				    	<br>
+				    	<div class="panel-group" id="accordion">
+
+				    	<div class="panel panel-default">
+						    <div data-toggle="collapse" data-parent="#accordion" href="#collapseMapQuest" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          MapQuest Clone
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseMapQuest" class="panel-collapse collapse">
+						      <div class="panel-body">
+						       <h2>MapQuest Clone</h2>
+						       <iframe src="https://drive.google.com/file/d/13CklbfN1BHcyGUBW4SeGZaOEzpp5SGcC/preview" allowfullscreen="" frameborder="0" width="100%" height="315"></iframe>
+						       <i>Note: Unnamed roads are represented with a question mark, and are valid pieces of data.</i>
+						        <br>
+						        <b>Completed:</b> December 2016
+						    	<br>
+						    	<b>Project Duration:</b> ~One Month (Broken into four week-long assignments)
+						    	<br>
+						    	<b>Role(s):</b> Programmer
+						    	<br>
+						    	<b>Team Size:</b> One
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> C++
+						    	<br>
+						    	<b>Code/Files:</b> As this is an academic assignment, I have made the repo private to avoid plagiarism. Available on request.
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	This project is a console application that takes an input of two cities in the US, then uses a variation of Dijkstra's algorithm on files containing all major cities and roads in the US, to calculate the shortest path between the two inputted cities. It then draws the route on a map of the US, which is appropriately zoomed depending on the distance between the two cities. It does this by taking data from binary files that contain information about what a map of the US would look like, and uses a graphics library with that data to draw the map and route.
+						    	<br>
+						    	<br>
+						    	This was the final project for my Algorithms class, ECE 318. ECE 118, 218, and 318 were all project-based classes, with assignments being done in C++. This is only one of many projects that I did for those classes, and more projects from those classes can be sent on request. I figured that this was the most interesting and complex project I had done for said classes.
+						    	<br>
+						    	<br>
+						    	The project was broken into four assignments, each a separate piece of the final product. You can view the assignments <a href="http://rabbit.eng.miami.edu/class/een318/171index.html">here</a> (assignments 2, 3, 4, and 6).
+							      
+
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				    
+				  </div>
+
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <a data-dismiss="modal" style="text-decoration: none; cursor:pointer;">Close</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Resume Modal -->
+		<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="projectModalLabel">Résumé</h4>
+		        <br>
+		        <div style="font-size: 15px;">Can't see it? <a style="font-size: 15px;" href="assets/Jan2019Resume.pdf">Click here.</a></div>
+		      </div>
+		      <div class="modal-body">
+		        <iframe style="width: 100%;height: 100%;" src="assets/Jan2019Resume.pdf" ></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <a data-dismiss="modal" style="text-decoration: none; cursor:pointer;">Close</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Links Modal -->
+		<div class="modal fade" id="linksModal" tabindex="-1" role="dialog" aria-labelledby="linksModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="linksModalLabel">Links</h4>
+		      </div>
+		      <div class="modal-body" style="text-align: center;">
+		      	<a href="mailto:rhs31@miami.edu"><i class="fas fa-envelope fa-fw"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		      	<a href="http://github.com/rhs31"><i class="fab fa-github fa-fw"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		        <a href="https://www.facebook.com/robert.silverberg.56"><i class="fab fa-facebook-f fa-fw"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://twitter.com/rahb_19"><i class="fab fa-twitter fa-fw"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.linkedin.com/in/robert-silverberg-651202b6/"><i class="fab fa-linkedin-in fa-fw"></i></a>	
+		        
+		      </div>
+		      <div class="modal-footer">
+		        <a data-dismiss="modal" style="text-decoration: none; cursor:pointer;">Close</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<footer>Copyright © 2019 Robert Silverberg</footer>
+
+		<script type="text/javascript"> //this closes the project accordion when not in use
+		$(document).click(function(e) {
+			if (!($(e.target).is('.panel-body') || $(e.target).is('.twitter-tweet'))) {
+		    	$('.collapse').collapse('hide');	    
+		    }
+		});
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+		<script src="/assets/OrbitControls.js"></script>
+		<script src="/examples/3d-obj-loader/assets/OBJLoader.js"></script>
+		<script src="/examples/3d-obj-loader/assets/MTLLoader.js"></script>
+		<script defer src="/examples/3d-obj-loader/scripts.js"></script>
+		
+	</body>
+</html>
