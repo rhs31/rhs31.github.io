@@ -42,7 +42,10 @@
 		      <div class="modal-body">
 		        <center><img src="assets/RobHead.jpg"></center>
 		        <br>
-		        Hi, I'm Robbie. I'm a computer science student at the <nobr>University of Miami</nobr> in Coral Gables, Florida. I will tentatively be graduating in December of 2019, and am <b>currently looking for <nobr>full-time</nobr> positions after graduation.</b>
+		        Hi, I'm Robert Silverberg. I am not the <a href="https://en.wikipedia.org/wiki/Robert_Silverberg">sci-fi author</a>, but I <i>do</i> like to work with futuristic tech. 
+		        <br>
+		        <br>
+		        I'm a computer science student at the <nobr>University of Miami</nobr> in Coral Gables, Florida. I will tentatively be graduating in May of 2020, and am <b>currently looking for <nobr>full-time</nobr> positions after graduation.</b>
 		        <br>
 		        <br>
 		        I grew up both in Princeton, New Jersey, and on the island of <nobr>St. Croix</nobr> in the US Virgin Islands.
@@ -51,14 +54,17 @@
 		        Lately, my primary focus has been in C# and Unity development, but I have experience with many technologies, and am open to learning more. Check out the projects section to see some of that experience. 
 		        <br>
 		        <br>
-		        This summer, I will work as a mixed reality research assistant at the <a href="http://ict.usc.edu/">University of Southern California Institute for Creative Technolgies.</a>
+		        I have previously worked as: 
 		        <br>
 		        <br>
-
-		        I have previously worked as a Unity developer for <nobr><a href="http://www.bogotadc.tv/#/transplant/">Bogota Digital Cinema</a></nobr>, where I worked on an interactive mixed reality art exhibit. I also worked as the Lead Instructor at 
-		        <nobr><a href="https://www.idtech.com/" style="text-decoration: underline;">iD Tech Camp's</a></nobr> 
-		        Rider University location, teaching Java, JavaScript, Unreal Engine, and Maya.         
-		        
+		        <ul>
+		        	<li>A mixed reality research assistant at the <a href="http://ict.usc.edu/">University of Southern California Institute for Creative Technolgies</a>.</li>
+		        	<br>
+		        	<li>A Unity developer for <a href="http://www.bogotadc.tv/#/transplant/">Bogota Digital Cinema's <i>Transplant</i> mixed reality art installation.</a></li>
+		        	<br>
+		        	<li>A lead Instructor for 
+		        		<nobr><a href="https://www.idtech.com/" style="text-decoration: underline;">iD Tech Camp</a></nobr>, teaching Java, JavaScript, Unreal Engine, and Maya. </li>
+		        </ul>        
 		      </div>
 		      <div class="modal-footer">
 		        <a data-dismiss="modal" style="text-decoration: none; cursor:pointer;">Close</a>
@@ -94,6 +100,83 @@
 				    <!-- Accordion for "Unity/C#" tab -->
 						<div class="panel-group" id="accordion">
 							<div class="panel panel-default">
+						    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseDisCoVR" class="panel-heading" style="cursor:pointer;">
+						      <h4 class="panel-title">
+						        <a>
+						          DisCoVR
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseDisCoVR" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        <h2> Spectator Techniques for Distributed Collaboration in Virtual Reality (DisCoVR)</h2>
+						        <iframe src="https://drive.google.com/file/d/1-fYtVUCyKQVhazYe0YjT-bMNEf44l22E/preview" allowfullscreen="" frameborder="0" width="100%" height="315"></iframe>
+						        <i>Note: I have not been allowed by my employer to show a video of the project. However, I will post it here if/when it's been ok'd to do so.</i>
+						    	<br>
+						        <b>Completed:</b> August 2019
+						    	<br>
+						    	<b>Project Duration:</b> ~Two Months
+						    	<br>
+						    	<b>Role(s):</b> Programmer, Co-Designer, Co-Researcher
+						    	<br>
+						    	<b>Team Size:</b> Two (with guidance from ICT staff)
+						    	<br>
+						    	<b>Technologies/Languages I Used:</b> Unity, C#, HTC Vive
+						    	<br>
+						    	<b>Code/Files:</b> Property of Employer
+						    	<br>
+						    	<b>Description:</b>
+						    	<br> 
+						    	This was my project when I worked as a research intern at the <a href="http://ict.usc.edu/">USC Institute for Creative Technologies</a>. This was a small piece of an ongoing project at the Institute to create a collaborative VR environment for use by the US Air Force. 
+						    	<br>
+						    	<br>
+						    	The portion of the project which I worked on involved exploring and prototyping various camera techniques, for potential use in the larger application. We felt that perspective, especially for productivity, is an area which has not been explored much for VR. I worked on this with my co-intern, Katherine Hsiao.
+						    	<br>
+						    	<br>
+						    	We ended up prototyping three camera techniques: Default Camera/Viewport Mode, 360 Degree Mode, and Flashlight Mode, and we conducted a user study involving a task, to test their effectiveness. Each of these techniques involved a user-spawned "viewport," and a corresponding spawned camera in worldspace. 
+						    	<br>
+						    	<br>
+						    	You can see the results of our preliminary study on the poster. I will link a more detailed report if/when that gets ok'd by my employer.
+						    	<br>
+						    	<br>
+						    	<ul>
+						    		<li>
+								    	<b>Default Camera/Viewport Mode:</b>
+										In the default mode, users create a viewport and camera in world space, which is spawned via menu (which they bring up with the menu button). Once users have done this, they can independently reposition each using the raycast attached to their controllers, along with the manipulation/interaction controls (scaling, rotating, etc.). Essentially, these objects are treated like regular objects. Beneath the viewport are buttons to toggle the other two modes. The user presses the grip button to cancel either of the next two modes, at which point they return to this mode. Later on, we attached widgets (position and rotation) to the viewport so that the player could manipulate the camera remotely.
+									</li>
+									<br>
+									<li>
+										<b>360 Mode:</b>
+										The player’s view is “teleported” to the camera, but their avatar and virtual controllers are still in the same place (it is similar to an “out-of-body” experience). The user can still control their avatar/controllers as usual, but they may need to get used to their controllers not quite lining up properly to their movements.
+									</li>
+									<br>
+									<li>
+										<b>Flashlight Mode:</b>
+										The viewport follows the player’s head movement. It can still be manipulated, but “sticks” to its set position when released, relative to the player’s head. Meanwhile, the camera’s orientation follows the player’s head rotation, but the camera is repositioned using the raycast. This gives the illusion that the player is peering through a “portal” that follows their head. The name was inspired by the Windows Mixed Reality headset’s “Flashlight Mode,” which uses the VR headset’s front camera to show the user a “flashlight” to the outside world.
+									</li>
+								
+						    	</ul>
+								<br>
+								I learned quite a bit during this project:
+								<br>
+								<br>
+								<ul>
+									<li>
+										This was my first time developing for "traditional" VR. <br>I had only developed for AR/MR before this.
+									</li>
+									<br>
+									<li>
+										While the camera prototypes were ultimately not networked, we experimented with networking quite a bit. 
+									</li>
+									<br>
+									<li>
+										<b>For this project, I really started to try to write more clean-looking, and easily maintainable code. I made an effort to keep the project as loosely-coupled as I could.</b> At the end of the internship, a full-time coworker, who was slated to take over the project after we had left, complimented me on the code. This made me feel quite good. :)
+									</li>
+								</ul>
+						      </div>
+						    </div>
+						  </div>
+							<div class="panel panel-default">
 						    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseCoralGuardin" class="panel-heading" style="cursor:pointer;">
 						      <h4 class="panel-title">
 						        <a>
@@ -120,7 +203,7 @@
 						    	<br>
 						    	<b>Description:</b>
 						    	<br> 
-						    	This project was made as the final project for my Augmented Reality class. I was also given permission to make this my final project for my Virtual Worlds class as well. It ended up winning "Best Game" at the University of Miami Interactive Media program's <a href="https://interactive.miami.edu/canesfilmfestival/">end-of-the-year show.</a> 
+						    	This project was made as the final project for my Augmented Reality class. I was also given permission to make this my final project for my Virtual Worlds class as well. It ended up winning <a href="https://interactive.miami.edu/canesfilmfestival/">"Best Game" at the University of Miami Interactive Media program's end-of-the-year show.</a> 
 						    	<br>
 						    	<br>
 						    	In this game, the player must place down a piece of coral, and defends it for two minutes by putting floating waste that would damage it in a recycling bin. If the coral is hit by too much trash, it dies. Once the two minutes are up, the player can place down another piece of coral, and then must defend <b>both</b> of them at the same time in the next "wave." The player keeps putting down and defending coral while adding to their total score until either all of their coral is dead, or they lose three corals in total. In this way, the difficulty scales while the player builds a "garden" of coral.
@@ -129,10 +212,10 @@
 						    	This was a group project. I was assigned to a group with classmates Hal Milenkovic, Ishan Outram, Yuan Fang, and Ryan Wong. Each group in the class was given a different assignment, and ours was to make a Magic Leap project about the Ocean. 
 						    	<br>
 						    	<br>
-						    	We decided early on to make it a game about protecting ocean life from pollution. Hal had made a phone AR game for his midterm project about defending a base from UFOs, so we decided to create a game around the same principle. Within the first or second meeting, we had conceptualized a game about protecting coral from floating trash. Here's a <a href="https://twitter.com/snuffysam/status/1127346245943558144">concept sketch</a>, courtesy of Ishan. 
+						    	We decided early on to make it a game about protecting ocean life from pollution. Within the first or second meeting, we had conceptualized a game about protecting coral from floating trash. Here's a <a href="https://twitter.com/snuffysam/status/1127346245943558144">concept sketch</a>, courtesy of Ishan. 
 						    	<br>
 						    	<br>
-						    	Hal sent me the repo from his midterm project for inspiration. Then I took the Magic Leap One back to my dorm and started developing the new project in Unity. Hal sent me 3D models for the claw, recycling bin, and some of the trash. He also sent some additional scripts for the game. Meanwhile, Ishan created the music. Ishan, Yuan, and Ryan all sent me assets such as sounds and 3D models from around the web.
+						    	I took the Magic Leap One back to my dorm and started developing the new project in Unity. Hal sent me 3D models for the claw, recycling bin, and some of the trash. He also sent some additional scripts for the game. Meanwhile, Ishan created the music. Ishan, Yuan, and Ryan all sent me assets such as sounds and 3D models from around the web.
 						    	<br>
 						    	<br>
 						    	The final outcome got a lot of attention and generated a good amount of buzz among people interested in Magic Leap development, including from some well-known figures in the XR world, as well as from the <a href="https://twitter.com/magicleapdevs/status/1129105465370173442">official Magic Leap Developers Twitter.</a> You can check out more of that buzz <a href="https://twitter.com/rahb_19/status/1126516217144053760">here</a> and <a href="https://twitter.com/yuncod/status/1126199554179850242">here</a>.
@@ -167,7 +250,7 @@
 						    	<br>
 						    	<b>Description:</b>
 						    	<br> 
-						    	This was a fun little project that I did for my Augmented Reality class. It ended up winning "Best Portfolio" at the University of Miami Interactive Media program's <a href="https://interactive.miami.edu/canesfilmfestival/">end-of-the-year show.</a> The assignment was to apply any of the concepts we had previously learned (various Vuforia and ARCore topics) to create an app. 
+						    	This was a fun little project that I did for my Augmented Reality class. It ended up winning <a href="https://interactive.miami.edu/canesfilmfestival/">"Best Portfolio" at the University of Miami Interactive Media program's end-of-the-year show.</a> The assignment was to apply any of the concepts we had previously learned (various Vuforia and ARCore topics) to create an app. 
 						    	<br>
 						    	<br>
 						    	I wanted to make an AR app that I could actually use in my day-to-day, so I decided to make an interactive, augmented reality "preview" of my portfolio site, in the form of a business card that I could hand to a potential employer. I had gotten this idea from an earlier lesson, which suggested using a business card for AR. This was what I made, shot through an older Android tablet, hence the slower framerate and time it takes to load in my site.
@@ -584,10 +667,10 @@
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		        <h4 class="modal-title" id="projectModalLabel">Résumé</h4>
 		        <br>
-		        <div style="font-size: 15px;">Can't see it? <a style="font-size: 15px;" href="assets/Jan2019Resume.pdf">Click here.</a></div>
+		        <div style="font-size: 15px;">Can't see it? <a style="font-size: 15px;" href="assets/RobertSilverbergResume.pdf">Click here.</a></div>
 		      </div>
 		      <div class="modal-body">
-		        <iframe style="width: 100%;height: 100%;" src="assets/Jan2019Resume.pdf" ></iframe>
+		        <iframe style="width: 100%;height: 100%;" src="assets/RobertSilverbergResume.pdf" ></iframe>
 		      </div>
 		      <div class="modal-footer">
 		        <a data-dismiss="modal" style="text-decoration: none; cursor:pointer;">Close</a>
